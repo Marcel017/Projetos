@@ -1,0 +1,13 @@
+label {
+    color: rgb(153, 0, 255);
+}
+body {
+    background-color: rgb(255, 251, 255);
+}
+h1 {
+    color: blueviolet;
+}
+.botao {
+    background-color: rgb(187, 19, 230);
+    color: aliceblue;
+}
