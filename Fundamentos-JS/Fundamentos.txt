@@ -1,0 +1,3 @@
+JavaScript
+
+percebo que o Html é o corpo, Css é o estilo, mas o JS é a alama do projeto em si
