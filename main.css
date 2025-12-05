@@ -79,33 +79,3 @@ section p {
 .social-links img {
     height: 24px;
 }
-
-#contact {
-    display: block;
-}
-
-.contact-methods {
-    display: flex;
-}
-
-form input,
-form textarea,
-form button {
-    display: block;
-    width: 320px;
-    margin-bottom: 8px;
-}
-
-#contact {
-    background-color: #182C61;
-    color: #ecf0f1;
-}
-
-#contact h2,
-#contact h3 {
-    color: #ecf0f1;
-}
-
-.contact-methods > div {
-    flex: 1;
-}
