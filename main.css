@@ -75,3 +75,7 @@ section p {
 .store-front {
     margin-right: 32px;
 }
+
+.social-links img {
+    height: 24px;
+}
