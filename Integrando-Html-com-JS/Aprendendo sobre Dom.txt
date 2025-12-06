@@ -1,8 +1,0 @@
-DOM = Document Objet Model
-
-representação do nosso documento
-
-
-document.getElementById = retorna linha do codigo se estiver com id
-
-atraves do Js podemos recuperar alguns valores 
