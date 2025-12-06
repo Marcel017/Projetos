@@ -1,3 +1,60 @@
 JavaScript
 
 percebo que o Html é o corpo, Css é o estilo, mas o JS é a alama do projeto em si
+
+console.log = mensagem que aparece apenas no consele do navegador
+
+varlor = valor mutavel
+const = valor imutavel
+
+let = valor mutavel (mais moderno)
+const = valor imutavel (mais moderno)
+
+da, ja o const é uma variavel que nao pode ser alteradaresumidamente, o valor let no caso e uma variavel que pode ser altera
+
+mas no final do dia, tudo é variavel
+
+= : colocando valor
+== : comparando valor
+
+variavel com nome composto teria que ser assim, marceloGabriel
+é uma maneira de manter o codigo organizado
+
+Js tem tipagem dinamica
+
+sem '' o Js reconhece o numero
+
+typeof ele retorna os valores
+
+let (Variavel) = (string ou numero)
+
+boleano e verdadeiro ou falso
+
+string = texto, palavras
+
+parseit eu consigo fazer o js entender que '65' vire um Number
+
+splice = apaga
+push = adiciona
+for = para
+while = enquanto
+
+while (saudacoes < nome.length){
+    console.log("O nome é: " + nome[saudacoes])
+    saudacoes++
+}
+
+for(let i = 0; i < nome.length; i++){
+    console.log("O Nome é: " + nome [i])
+}
+
+boleano verifica se e verdadeiro ou falso
+
+
+Prompt + um campo de preenchimento 
+If e else de ladinho papai
+
+codição sao caminhos, se eu for fazer isso, n posso fazer aquilo
+
+função são condigos reutilizaveis
+que são funcionalidades
