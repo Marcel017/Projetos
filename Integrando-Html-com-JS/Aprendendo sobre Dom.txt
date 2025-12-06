@@ -1,0 +1,3 @@
+DOM = Document Objet Model
+
+representação do nosso documento
