@@ -21,8 +21,7 @@ header {
     color: #fff;
 }
 
-header > .container{
-    display: flex;
+header > .container {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
@@ -31,7 +30,7 @@ header > .container{
 nav {
     background-color: #575fcf;
     padding: 16px 0;
-    display: none;
+    display: flex;
 }
 
 nav li{
@@ -50,6 +49,7 @@ nav li a{
 
 .menu-hamburger {
     width: 32px;
+    cursor: pointer;
 }
 
 .menu-hamburger span{
@@ -58,4 +58,20 @@ nav li a{
     background-color: #fff;
     display: block;
     margin-bottom: 4px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+section h2 {
+    margin-bottom: 16px;
 }
