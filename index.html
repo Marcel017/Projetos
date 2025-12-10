@@ -192,7 +192,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="contato">
         <div class="container">
             <h2>Entre em contato</h2>
             <form>
@@ -252,52 +252,7 @@
     <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/messages_pt_BR.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#carousel-imagen').slick({
-                autoplay: true
-            })
-
-            $('.menu-hamburger').click(function(){
-                $('nav').slideToggle();
-            })
-
-            $('#campo-telefone').mask('(00) 00000-0000')
-
-            $('form').validate({
-                rules: {
-                    nome: {
-                        required: true
-                    },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    telefone: {
-                        required: true
-                    },
-                    mensagem : {
-                        required:true,
-                    },
-                    veiculoDeInteresse: {
-                        required: false,
-                    }
-                },
-                messages: {
-                    nome: 'Por favor insira o seu nome'
-                },
-                submitHandler: function(form) {
-                    console.log(form)
-                },
-                invalidHandler: function(evento, validador) {
-                    let camposIncorretos = validador.numberOfInvalids();
-                    if (camposIncorretos) {
-                        alert(`Existem ${camposIncorretos} campos incorretos`)
-                    }
-                }
-            })
-        })
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
