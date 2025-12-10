@@ -209,8 +209,8 @@
                     <input type="email" id="email" name="email">
                 </div>
                 <div class="form-campo">
-                    <label for="veiculo-interesse">Veículo de interesse</label>
-                    <input type="text" id="veiculo-interesse" name="veiculo-interesse">
+                    <label for="veiculoDeInteresse">Veículo de interesse</label>
+                    <input type="text" id="veiculoDeInteresse" name="veiculo-interesse">
                 </div>
                 <div class="form-campo">
                     <label for="mensagem">Mensagem</label>
@@ -262,7 +262,7 @@
                 $('nav').slideToggle();
             })
 
-            $('#campo-telefone').mask('(00) 00000-0000',)
+            $('#campo-telefone').mask('(00) 00000-0000')
 
             $('form').validate({
                 rules: {
@@ -276,6 +276,24 @@
                     telefone: {
                         required: true
                     },
+                    mensagem : {
+                        required:true,
+                    },
+                    veiculoDeInteresse: {
+                        required: false,
+                    }
+                },
+                messages: {
+                    nome: 'Por favor insira o seu nome'
+                },
+                submitHandler: function(form) {
+                    console.log(form)
+                },
+                invalidHandler: function(evento, validador) {
+                    let camposIncorretos = validador.numberOfInvalids();
+                    if (camposIncorretos) {
+                        alert(`Existem ${camposIncorretos} campos incorretos`)
+                    }
                 }
             })
         })
