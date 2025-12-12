@@ -52,6 +52,7 @@
                         </li>
                     </ul>
                 </nav>
+                <button id="btn-checar-emails" type="button" class="btn btn-warning">Checar caixa de mensagens</button>
             </div>
         </div>
     </header>
@@ -88,6 +89,32 @@
         </section>
     </div>
 
+    <div class="toast-container position=fixed bottom-0 end-0 p-3">
+        <div class="toast">
+            <header class="toast-header">
+                <strong>Importante</strong>
+            </header>
+            <div class="toast-body">
+                Você possui 10 mensagens não lidas.
+                <div class="mt-2 pt-2 border-top">
+                    <button data-bs-dimiss="'toast" class="btn btn-danger">
+                        Descartar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="lib/bootstrap.bundle.min.js"></script>
+    <script>
+        const ativadorToast = document.getElementById('btn-checar-emails');
+        const mensagem = document.getElementById('mensagem-alerta');
+
+        if (ativadorToast) {
+            ativadorToast.addEventListener('click', function() {
+                const toast = new boostrap.toast(mensagem)
+                toast.show();
+            });
+        }
+    </script>
 </body>
 </html>
