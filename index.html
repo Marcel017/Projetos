@@ -5,37 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booststrap - Cards</title>
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .card-img-overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
 </head>
 <body>
     <h1>Booststrap - Cards</h1>
     <div class="container">
         <div class="row">
             <div class="col-4">
-                <div class="card">
+                <article class="card">
+                    <header class="card-header">
+                        Desenvolvimento Web
+                    </header>
+                    <img src="https://placehold.co/100x100" alt="Imagem de teste">
+                    <div class="card-body">
+                        <h4 class="card-title">Cards do Booststrap</h4>
+                        <h5 class="card-subtitle">Subtítulo do Card</h5>
+                        <p class="card-text">
+                            Conheça os Cards do Booststrap e suas Variaveis
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia Mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>11/12/2025</time>
+                    </footer>
+                </article>
+            </div>           
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <img src="https://cdn.pixabay.com/photo/2022/02/07/12/17/street-6999284_960_720.jpg" alt="Imagem de teste">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Titulo do card</h4>
+                        <h5 class="card-subtitle">Subtítulo do Card</h5>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi dicta vel a accusantium eligendi placeat. Voluptate recusandae iusto itaque voluptatum ipsum necessitatibus facere quisquam adipisci tempore, non, omnis minus consequuntur.
+                        </p>
+                        <a href="#" class="btn btn-primary">Botão link</a>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-4">
+                <div class="card text-bg-dark">
                     <div class="card-header">
                         Cabeçalho do header
                     </div>
-                    <img src="" />
+                    <img src="https://placehold.co/100x100" alt="Imagem de teste">
                     <div class="card-body">
-                        <h4 class="title">Titulo do card</h4>
+                        <h4 class="card-title">Titulo do card</h4>
+                        <h5 class="card-subtitle">Subtítulo do Card</h5>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi dicta vel a accusantium eligendi placeat. Voluptate recusandae iusto itaque voluptatum ipsum necessitatibus facere quisquam adipisci tempore, non, omnis minus consequuntur.
+                        </p>
+                        <a href="#" class="btn btn-primary">Botão link</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    teste card
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    teste card
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    teste card
-                </div>
-            </div>            
+            </div>    
         </div>
     </div>
 
