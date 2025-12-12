@@ -1,81 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebac Motors</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <title>Booststrap - Cards</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <div class="container container-flex">
-            <h1>EBAC Motors</h1>
-            <div class="menu-hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <h1>Booststrap - Cards</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        Cabeçalho do header
+                    </div>
+                    <img src="" />
+                    <div class="card-body">
+                        <h4 class="title">Titulo do card</h4>
+                    </div>
+                </div>
             </div>
-        </div>
-        <nav>
-            <div class="container">
-                <ul>
-                    <li>
-                        <a href="#">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#">Em destaque</a>
-                    </li>
-                    <li>
-                        <a href="#">Promoções</a>
-                    </li>
-                    <li>
-                        <a href="#">Contato</a>
-                    </li>
-                </ul>
+            <div class="col-4">
+                <div class="card">
+                    teste card
+                </div>
             </div>
-        </nav>
-    </header>
-    <div id="carousel-imagen">
-        <img src="./images/slide1.png" alt="Carro da Porshe">
-        <img src="./images/slide2.png" alt="Carro da BMW">
-        <img src="./images/slide3.png" alt="Carro da Ford">
-    </div>
-<section id="sobre-a-loja">
-    <div  class="container container-flex">
-        <img src="./images/loja.jpg" alt="Imagem da Loja EBAC Motors">
-        <div>
-            <h2>Sobre a EBAC Motors</h2>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse minus expedita laudantium, obcaecati omnis veritatis explicabo placeat repudiandae facere quibusdam quod nemo dicta hic, similique officiis nesciunt dolorum est suscipit.            
-            </p>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse minus expedita laudantium, obcaecati omnis veritatis explicabo placeat repudiandae facere quibusdam quod nemo dicta hic, similique officiis nesciunt dolorum est suscipit.            
-            </p> 
+            <div class="col-4">
+                <div class="card">
+                    teste card
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    teste card
+                </div>
+            </div>            
         </div>
     </div>
-</section>
 
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#carousel-imagen').slick({
-                autoplay: true
-            })
-
-            $('.menu-hamburger').click(function(){
-                $('nav').slideToggle();
-            })
-        })
-    </script>
+    <script src="/lib/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
