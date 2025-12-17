@@ -1,0 +1,86 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.container {
+    max-width: $container-width;
+    width: 100%;
+    margin: 0 auto;
+
+    @include respond-to(1023px) {
+        max-width: 80%;
+    }
+}
+
+header {
+    background-color: $bg-header;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        @include flex-between;
+        padding: to-rem(16) 0;
+    }
+}
+
+.menu {
+    display: flex;
+
+    li {
+        font-weight: bold;
+        margin-left: to-rem(24);
+
+        a {
+            color: $text-light;
+            text-decoration: none;
+        }
+    }
+}
+
+section {
+    padding: to-rem(56) 0;
+}
+
+.products {
+    margin-top: to-rem(40);
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+
+    @include respond-to(1023px) {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+
+    @include respond-to(767px) {
+        display: block;
+    }
+}
+
+.product-item {
+    img {
+        width: 100%;
+        border-radius: $radius-md;
+    }
+
+    @include respond-to(767px) {
+        margin-bottom: to-rem(32);
+    }
+}
+
+.product-button {
+    display: block;
+    background-color: $btn-primary;
+    color: $text-light;
+    text-align: center;
+    padding: to-rem(8) 0;
+    border-radius: $radius-sm;
+    margin-top: to-rem(8);
+    text-decoration: none;
+
+    &:hover {
+        background-color: $btn-hover;
+    }
+}

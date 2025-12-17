@@ -1,0 +1,22 @@
+@use "sass:math";
+
+@function to-rem($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
+@mixin respond-to($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin flex-start {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
